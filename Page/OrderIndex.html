@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="assets/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <title>AllyMarketim</title>
+  </head>
+  <body>
+    <header>
+      <!--MENU CUBUGU-->
+      <div class="container">
+        <br>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../Page/index.html">
+              <img src="../assets/images/logov1.png" alt="">
+              <span style="color:blueviolet;">AllyMarketim</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Admin Paneli
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../Page/CategoriesIndex.html">Kategoriler</a></li>
+                    <li><a class="dropdown-item" href="../Page/ProductIndex.html">Ürünler</a></li>
+                    <li><a class="dropdown-item" href="../Page/UserIndex.html">Kullanıcılar</a></li>
+                    <li><a class="dropdown-item" href="../Page/OrderIndex.html">Siparişler</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../Page/OrderIndex.html">Siparişler</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../Page/Profil.html">Profil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../Page/Summary.html"><i class="bi bi-cart3"></i> (5)</a>
+                </li>
+                
+                
+              </ul>
+              <div class="navbar-nav ms-auto mb-lg-0">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 300px;">
+                  <button class="btn btn-outline-success col-sm-3" style="margin-right: 0.5rem;"  type="submit"><i class="bi bi-search"></i> Ara</button>
+                </form>
+                <br>
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal1" class="btn btn-outline-primary" style="margin-right: 0.5rem;"><i class="bi bi-person-circle"></i> Üye Ol</a>
+                <br>
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-success"><i class="bi bi-box-arrow-in-right"></i> Giriş</a>
+              </div>
+              
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+    </header>
+    <div class="container">
+      <div class="row">
+        <!--Slider-->
+      </div>
+      <br>
+      <div class="row">
+        
+        <div class="col-md-12">
+          <!--Degisecek Alan-->
+          <div class="row">
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-primary">Beklenen Siparişler</button>
+                <button type="button" class="btn btn-outline-primary">Onaylanan Siparişler</button>
+                <button type="button" class="btn btn-outline-primary">Kargolanan Siparişler</button>
+                <button type="button" class="btn btn-outline-primary active">Tüm Siparişler</button>
+              </div>
+          </div>
+          <br>
+          <table class="table table-striped table-bordered" id="example">
+            <thead class="table-dark">
+                <tr style="color: white;">
+                    <th> Adı:</th>
+                    <th> Soyadı:</th>
+                    <th> Email:</th>
+                    <th> Telefon:</th>
+                    <th> Durum:</th>
+                    <th></th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tuğkan</td>
+                    <td>Seçkin</td>
+                    <td>tugi@gmail.com</td>
+                    <td>05555555555</td>
+                    <td>Beklemede</td>
+                    <td>
+                        <a href="../Page/OrderDetails.html" class="btn btn-success"><i class="bi bi-pencil"></i>Detay</a>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>Serhat</td>
+                    <td>Aydin</td>
+                    <td>aydinserhat@gmail.com</td>
+                    <td>05555555555</td>
+                    <td>Onaylandı</td>
+                    <td>
+                        <a href="../Page/OrderDetails.html" class="btn btn-success"><i class="bi bi-pencil"></i>Detay</a>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alp</td>
+                    <td>Uğurlu</td>
+                    <td>alp@gmail.com</td>
+                    <td>05555555555</td>
+                    <td>Kargoya Verildi</td>
+                    <td>
+                        <a href="../Page/OrderDetails.html" class="btn btn-success"><i class="bi bi-pencil"></i>Detay</a>
+                        
+                    </td>
+                </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <!--footer-->
+        <div class="container bg-dark">
+          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top text-light">
+            
+        
+            <div class="col md-1">
+        
+            </div>
+        
+            <div class="col mb-3">
+              <h5>Bize Ulaşın</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-house-door-fill"></i> Eskişehir</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-envelope-at-fill"></i> AllyMarketim@gmail.com</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-telephone-fill"></i> +90 05*********</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+              
+            </div>
+        
+            <div class="col mb-3">
+              <h5>Sosyal Medya</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://tr-tr.facebook.com/" class="nav-link p-0 text-muted"><i class="bi bi-facebook"></i> Facebook</a></li>
+                <li class="nav-item mb-2"><a href="https://www.instagram.com/" class="nav-link p-0 text-muted"><i class="bi bi-instagram"></i> İnstagram</a></li>
+                <li class="nav-item mb-2"><a href="https://twitter.com/?lang=tr" class="nav-link p-0 text-muted"><i class="bi bi-twitter"></i> Twitter</a></li>
+                <li class="nav-item mb-2"><a href="https://www.youtube.com/" class="nav-link p-0 text-muted"><i class="bi bi-youtube"></i> Youtube</a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </footer>
+    
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-success" id="exampleModalLabel">Giriş Formu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <button class="btn btn-outline-primary"><i class="bi bi-facebook"></i> Facebook</button>
+          <button class="btn btn-outline-danger"><i class="bi bi-google"></i> Google</button>
+        </div>
+        <br>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" id="recipient-name" placeholder="Şifre">
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-success"><i class="bi bi-box-arrow-in-right"></i> Giriş Yap</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary" id="exampleModalLabel">Kayıt Formu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <button class="btn btn-outline-primary"><i class="bi bi-facebook"></i> Facebook</button>
+          <button class="btn btn-outline-danger"><i class="bi bi-google"></i> Google</button>
+        </div>
+        <br>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" placeholder="Ad">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" placeholder="Soyad">
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" id="recipient-name" placeholder="Şifre">
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" id="recipient-name" placeholder="Şifre Tekrar">
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-primary"><i class="bi bi-person-circle"></i> Üye Ol</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+    $('#example').DataTable({
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+        }
+    });
+});
+</script>
+    
+  </body>
+</html>

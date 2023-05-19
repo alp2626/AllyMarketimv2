@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="assets/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>AllyMarketim</title>
+  </head>
+  <body>
+    <header>
+      <!--MENU CUBUGU-->
+      <div class="container">
+        <br>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../Page/index.html">
+              <img src="../assets/images/logov1.png" alt="">
+              <span style="color:blueviolet;">AllyMarketim</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Admin Paneli
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../Page/CategoriesIndex.html">Kategoriler</a></li>
+                    <li><a class="dropdown-item" href="../Page/ProductIndex.html">Ürünler</a></li>
+                    <li><a class="dropdown-item" href="../Page/UserIndex.html">Kullanıcılar</a></li>
+                    <li><a class="dropdown-item" href="../Page/OrderIndex.html">Siparişler</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../Page/OrderIndex.html">Siparişler</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../Page/Profil.html">Profil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../Page/Summary.html"><i class="bi bi-cart3"></i> (5)</a>
+                </li>
+                
+                
+              </ul>
+              <div class="navbar-nav ms-auto mb-lg-0">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 300px;">
+                  <button class="btn btn-outline-success col-sm-3" style="margin-right: 0.5rem;"  type="submit"><i class="bi bi-search"></i> Ara</button>
+                </form>
+                <br>
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal1" class="btn btn-outline-primary" style="margin-right: 0.5rem;"><i class="bi bi-person-circle"></i> Üye Ol</a>
+                <br>
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-success"><i class="bi bi-box-arrow-in-right"></i> Giriş</a>
+              </div>
+              
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+    </header>
+    <div class="container mt-4">
+      <div class="row">
+        <!--Slider-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="500" data-bs-pause="hover">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../assets/images/r1.jpg"  width="200" height="300" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/images/r2.jpg"  width="200" height="300" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/images/r3.jpg"  width="200" height="300" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <!--Kategori Listesi-->
+          <div class="list-group">
+            <a href="../Page/index.html" class="list-group-item list-group-item-action active" aria-current="true">
+              Tüm Ürünler
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Bilgisayar</a>
+            <a href="#" class="list-group-item list-group-item-action">Telefon</a>
+            <a href="#" class="list-group-item list-group-item-action">Tablet</a>
+            <a href="#" class="list-group-item list-group-item-action">Televizyon</a>
+          </div>
+        </div>
+        <div class="col-md-3" style="margin-bottom: 10px;">
+          <!--Degisecek Alan-->
+          <div class="card">
+            <div class="card-header">
+              Asus TUF Gaming Laptop
+            </div>
+            <img src="../assets/images/asuspc1.jpg" class="card-img-top" alt="..." style="height: 200px;">
+            <div class="card-body">
+              <p class="card-text">Asus TUF Gaming F15 FX506HM-HN114 Intel Core i5 11400H 16GB 512GB SSD RTX3060 Freedos 15.6" FHD Taşınabilir Bilgisayar</p>
+            </div>
+            <div class="card-footer">
+              <label for="" style="font-size: 20px; color: green"><b>24.499,00 TL</b></label>
+              <a href="../Page/ProductDetails.html" class="btn btn-outline-info" style="float: right;">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="margin-bottom: 10px;">
+          <!--Degisecek Alan-->
+          <div class="card">
+            <div class="card-header">
+              HP Victus Gaming Laptop
+            </div>
+            <img src="../assets/images/hppc1.jpg" class="card-img-top" alt="..." style="height: 200px;">
+            <div class="card-body">
+              <p class="card-text">HP Victus Gaming 15-FA1033NT Intel Core i5 13500H 16GB 512GB SSD RTX4050 Freedos 15.6" FHD Taşınabilir Bilgisayar 7N9V2EA</p>
+            </div>
+            <div class="card-footer">
+              <label for="" style="font-size: 20px; color: green"><b>23.998,99 TL</b></label>
+              <a href="../Page/ProductDetails.html" class="btn btn-outline-info" style="float: right;">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="margin-bottom: 10px;">
+          <!--Degisecek Alan-->
+          <div class="card">
+            <div class="card-header">
+              Apple MacBook Laptop
+            </div>
+            <img src="../assets/images/applepc1.jpg" class="card-img-top" alt="..." style="height: 200px;">
+            <div class="card-body">
+              <p class="card-text">Apple MacBook Air M1 Çip 8GB 256GB SSD macOS 13" QHD Taşınabilir Bilgisayar Uzay Grisi MGN63TU/A</p>
+            </div>
+            <div class="card-footer">
+              <label for="" style="font-size: 20px; color: green"><b>20.499,00 TL</b></label>
+              <a href="../Page/ProductDetails.html" class="btn btn-outline-info" style="float: right;">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="margin-bottom: 10px;">
+          <!--Degisecek Alan-->
+          <div class="card">
+            <div class="card-header">
+              iPhone 14 Pro Max
+            </div>
+            <img src="../assets/images/applephone1.jpg" class="card-img-top" alt="..." style="height: 200px;">
+            <div class="card-body">
+              <p class="card-text">iPhone 14 Pro Max 128 GB</p>
+            </div>
+            <div class="card-footer">
+              <label for="" style="font-size: 20px; color: green"><b>44.998,99 TL</b></label>
+              <a href="../Page/ProductDetails.html" class="btn btn-outline-info" style="float: right;">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="margin-bottom: 10px;">
+          <!--Degisecek Alan-->
+          <div class="card">
+            <div class="card-header">
+              Samsung Galaxy A53
+            </div>
+            <img src="../assets/images/samsungphone1.jpg" class="card-img-top" alt="..." style="height: 200px;">
+            <div class="card-body">
+              <p class="card-text">Samsung Galaxy A53 5G 128 GB</p>
+            </div>
+            <div class="card-footer">
+              <label for="" style="font-size: 20px; color: green"><b>11.160,00 TL</b></label>
+              <a href="../Page/ProductDetails.html" class="btn btn-outline-info" style="float: right;">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="margin-bottom: 10px;">
+          <!--Degisecek Alan-->
+          <div class="card">
+            <div class="card-header">
+              Xiaomi Redmi Note 11
+            </div>
+            <img src="../assets/images/xiaomiphone1.jpg" class="card-img-top" alt="..." style="height: 200px;">
+            <div class="card-body">
+              <p class="card-text">Xiaomi Redmi Note 11 128 GB 6 GB Ram</p>
+            </div>
+            <div class="card-footer">
+              <label for="" style="font-size: 20px; color: green"><b>7.199,00 TL</b></label>
+              <a href="../Page/ProductDetails.html" class="btn btn-outline-info" style="float: right;">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="margin-bottom: 10px;">
+          <!--Degisecek Alan-->
+          <div class="card">
+            <div class="card-header">
+              LG Smart OLED TV
+            </div>
+            <img src="../assets/images/lgtv1.jpg" class="card-img-top" alt="..." style="height: 200px;">
+            <div class="card-body">
+              <p class="card-text">LG OLED55CS6LA 55" 139 Ekran Uydu Alıcılı 4K Ultra HD webOS Smart OLED TV</p>
+            </div>
+            <div class="card-footer">
+              <label for="" style="font-size: 20px; color: green"><b>29.898,81 TL</b></label>
+              <a href="../Page/ProductDetails.html" class="btn btn-outline-info" style="float: right;">Detay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <!--footer-->
+      <div class="container bg-dark">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top text-light">
+          
+      
+          <div class="col md-1">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Bize Ulaşın</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="../Page/Address.html" class="nav-link p-0 text-muted"><i class="bi bi-house-door-fill"></i> Eskişehir</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-envelope-at-fill"></i> AllyMarketim@gmail.com</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-telephone-fill"></i> +90 05*********</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Sosyal Medya</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://tr-tr.facebook.com/" class="nav-link p-0 text-muted"><i class="bi bi-facebook"></i> Facebook</a></li>
+              <li class="nav-item mb-2"><a href="https://www.instagram.com/" class="nav-link p-0 text-muted"><i class="bi bi-instagram"></i> İnstagram</a></li>
+              <li class="nav-item mb-2"><a href="https://twitter.com/?lang=tr" class="nav-link p-0 text-muted"><i class="bi bi-twitter"></i> Twitter</a></li>
+              <li class="nav-item mb-2"><a href="https://www.youtube.com/" class="nav-link p-0 text-muted"><i class="bi bi-youtube"></i> Youtube</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </footer>
+    
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-success" id="exampleModalLabel">Giriş Formu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <button class="btn btn-outline-primary"><i class="bi bi-facebook"></i> Facebook</button>
+          <button class="btn btn-outline-danger"><i class="bi bi-google"></i> Google</button>
+        </div>
+        <br>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" id="recipient-name" placeholder="Şifre">
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-success"><i class="bi bi-box-arrow-in-right"></i> Giriş Yap</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary" id="exampleModalLabel">Kayıt Formu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <button class="btn btn-outline-primary"><i class="bi bi-facebook"></i> Facebook</button>
+          <button class="btn btn-outline-danger"><i class="bi bi-google"></i> Google</button>
+        </div>
+        <br>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" placeholder="Ad">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" placeholder="Soyad">
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" id="recipient-name" placeholder="Şifre">
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" id="recipient-name" placeholder="Şifre Tekrar">
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-primary"><i class="bi bi-person-circle"></i> Üye Ol</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
